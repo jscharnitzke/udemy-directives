@@ -7,8 +7,16 @@ import { ServerComponent } from '../server/server.component';
   styleUrls: ['./servers.component.scss']
 })
 export class ServersComponent implements OnInit {
+  allowNewServer = false;
+  serverCreationStatus = 'No server was created';
+  serverName = 'Testserver';
+  serverCreated = false;
 
-  constructor() { }
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true;
+    }, 2000);
+   }
 
   ngOnInit() {
   }
