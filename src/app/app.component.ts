@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  serverName = '';
+  serverName = 'testserver';
+  serverCreated = false;
+
+  createServer() {
+    this.serverCreated = true;
+  }
+
 }
+
